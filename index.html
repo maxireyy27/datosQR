@@ -4,17 +4,112 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Datos del QR</title>
+    <style>
+        /* Estilos generales de la página */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        /* Contenedor principal */
+        .container {
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 600px;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #333;
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        /* Estilo de los párrafos */
+        p {
+            font-size: 16px;
+            margin: 10px 0;
+            color: #555;
+        }
+
+        /* Resaltar los valores */
+        span {
+            font-weight: bold;
+            color: #007BFF;
+        }
+
+        /* Estilo de los bordes de las líneas */
+        .data-item {
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            background-color: #f9f9f9;
+        }
+
+        /* Estilo de los encabezados */
+        .data-item p {
+            margin: 0;
+        }
+
+        /* Agregar un efecto de hover para las filas de datos */
+        .data-item:hover {
+            background-color: #e6f7ff;
+            cursor: pointer;
+        }
+
+        /* Fondo de la página */
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 14px;
+            color: #777;
+        }
+
+    </style>
 </head>
 <body>
-    <h1>Datos del QR</h1>
-    <p>ID: <span id="id"></span></p>
-    <p>Nombre: <span id="nombre"></span></p>
-    <p>Apellidos: <span id="apellidos"></span></p>
-    <p>Giro: <span id="giro"></span></p>
-    <p>Ubicación: <span id="ubicacion"></span></p>
-    <p>Horario: <span id="horario"></span></p>
-    <p>Representante: <span id="representante"></span></p>
-    <p>Periodo: <span id="periodo"></span></p>
+    <div class="container">
+        <h1>Datos del Beneficiario</h1>
+        <div class="data-item">
+            <p>ID: <span id="id"></span></p>
+        </div>
+        <div class="data-item">
+            <p>Nombre: <span id="nombre"></span></p>
+        </div>
+        <div class="data-item">
+            <p>Apellidos: <span id="apellidos"></span></p>
+        </div>
+        <div class="data-item">
+            <p>Giro: <span id="giro"></span></p>
+        </div>
+        <div class="data-item">
+            <p>Ubicación: <span id="ubicacion"></span></p>
+        </div>
+        <div class="data-item">
+            <p>Horario: <span id="horario"></span></p>
+        </div>
+        <div class="data-item">
+            <p>Representante: <span id="representante"></span></p>
+        </div>
+        <div class="data-item">
+            <p>Periodo: <span id="periodo"></span></p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Datos del Beneficiario - Todos los derechos reservados</p>
+    </footer>
 
     <script>
         // Obtener los parámetros de la URL
