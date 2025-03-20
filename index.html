@@ -25,6 +25,7 @@
             width: 100%;
             max-width: 600px;
             padding: 20px;
+            box-sizing: border-box;
         }
 
         h1 {
@@ -76,6 +77,43 @@
             color: #777;
         }
 
+        /* Consultas de medios para hacerlo responsivo */
+        @media (max-width: 768px) {
+            .container {
+                padding: 15px;
+            }
+
+            h1 {
+                font-size: 22px;
+            }
+
+            p {
+                font-size: 14px;
+            }
+
+            .data-item {
+                padding: 8px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 20px;
+            }
+
+            p {
+                font-size: 12px;
+            }
+
+            .data-item {
+                padding: 6px;
+            }
+
+            footer {
+                font-size: 12px;
+            }
+        }
+
     </style>
 </head>
 <body>
@@ -125,3 +163,4 @@
     </script>
 </body>
 </html>
+
